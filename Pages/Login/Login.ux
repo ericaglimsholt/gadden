@@ -14,10 +14,5 @@
         <Text Value="LOGGA IN / REGISTRERA" Color="Black" Alignment="Center" Font="RalewayBlack"/>
       </Rectangle>
 
-      <Panel ux:Class="LoginButton" HitTestMode="LocalBounds" Margin="4" Color="#fff">
-          <string ux:Property="Text" />
-          <LoginButton Color="Black" Alignment="Center" Margin="30,15" Text="LOGGA IN / REGISTRERA" />
-      </Panel>
-
     </StackPanel>
 </Page>

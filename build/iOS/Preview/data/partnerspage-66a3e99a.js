@@ -9,7 +9,7 @@ function Partners(item) {
   this.logo = item.logotype.thumbs.small;
 };
 
-fetch("http://dev.jexpo.se/dev/forms/partners?getAttributes=1")
+fetch("https://dev.jexpo.se/dev/forms/ws:partners?getAttributes=1")
 .then(function(response) { return response.json(); })
 .then(function(responseObject) {
     var items = [];

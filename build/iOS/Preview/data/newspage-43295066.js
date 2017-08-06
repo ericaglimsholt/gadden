@@ -14,7 +14,7 @@ function articleClicked(args) {
 	selectedArticle.value = args.data;
 };
 
-fetch("https://dev.jexpo.se/dev/forms/news?getAttributes=1")
+fetch("https://dev.jexpo.se/dev/forms/ws:news?getAttributes=1")
 .then(function(response) { return response.json(); })
 .then(function(responseObject) {
     var items = [];

@@ -170,13 +170,10 @@ struct MainView : ::g::Fuse::App
     static ::g::Uno::UX::Selector& __selector66() { return MainView_typeof()->Init(), __selector66_; }
     static ::g::Uno::UX::Selector __selector67_;
     static ::g::Uno::UX::Selector& __selector67() { return MainView_typeof()->Init(), __selector67_; }
-<<<<<<< HEAD
-=======
     static ::g::Uno::UX::Selector __selector68_;
     static ::g::Uno::UX::Selector& __selector68() { return MainView_typeof()->Init(), __selector68_; }
     static ::g::Uno::UX::Selector __selector69_;
     static ::g::Uno::UX::Selector& __selector69() { return MainView_typeof()->Init(), __selector69_; }
->>>>>>> 1b78b750525f1c14d0676759d68b214d8813e7b4
     static ::g::Uno::UX::Selector __selector7_;
     static ::g::Uno::UX::Selector& __selector7() { return MainView_typeof()->Init(), __selector7_; }
     static ::g::Uno::UX::Selector __selector8_;

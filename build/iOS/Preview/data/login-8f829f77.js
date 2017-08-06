@@ -1,8 +1,8 @@
 var Observable = require("FuseJS/Observable");
-var email = Observable("jeremydanner2@gmail.com");
-var name = Observable("Jeremy");
+var email = Observable("");
+var name = Observable("");
 
-var APIurl = "";
+var url = "https://dev.jexpo.se/dev/auth";
 function signup(arg) {
 
     var requestObject = {
@@ -16,7 +16,7 @@ function signup(arg) {
     var x = '';
     var y = '';
 
-    fetch(APIurl, {
+    fetch(url, {
         method: 'POST',
         headers: {
             "Content-type": "application/json"
