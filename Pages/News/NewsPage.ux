@@ -57,10 +57,53 @@
               <!-- Text in button -->
               <Paragraph FontSize="18" Alignment="Center" Value="GÅ TILL EVENT" IsReadOnly="True" />
               <Clicked>
+                <Set NewsDetails.Visibility="Hidden" Delay="0.2" />
+                <Set LectureDetails.Visibility="Visible" Delay="0.2" />
+                <Callback Handler="{goToEvent}"/>
               </Clicked>
             </Rectangle>
             <!-- Background -->
             <Image Margin="0,-60,0,0" Width="100%" Alignment="BottomCenter" File="../../assets/BackgroundNewsDetails.png" StretchMode="UniformToFill"/>
+          </With>
+        </StackPanel>
+      </ScrollView>
+    </Rectangle>
+  </Panel>
+
+  <!-- Output lecture details -->
+  <Panel ux:Name="LectureDetails" Visibility="Hidden"  >
+    <Rectangle Width="100%" Height="100%"  Background="Black" ZOffset="1.0" >
+      <ScrollView>
+        <StackPanel>
+          <With Data="{selectedLecture}">
+            <!-- Get image from JSON -->
+            <Panel Width="100%" Height="100%">
+              <Image Url="{image}" Height="100%" />
+            </Panel>
+            <!-- Get name from JSON -->
+            <Panel Alignment="BottomLeft" Margin="0,20,0,0" Width="100%" Height="100%">
+              <Title Value="{= toUpper({name})}" FontSize="28" LineSpacing="10" Height="100%" Width="100%" TextAlignment="Left"/>
+            </Panel>
+            <!-- Get time and location from JSON -->
+            <Panel Margin="20">
+              <StackPanel>
+                <SmallText FontSize="18" Color="#979797" Margin="0,0,0,5" Value="{= toUpper({date})} {time}" />
+                <SmallText FontSize="12" Value="{= toUpper({location})}" />
+              </StackPanel>
+            </Panel>
+            <!-- Seperator -->
+            <Rectangle Alignment="Left" Fill="#979797" Height="1px" SnapToPixels="true" Width="60%" Margin="20,0,0,0"/>
+            <!-- Get description from JSON -->
+            <Panel Margin="20">
+              <Paragraph Value="{description}" />
+            </Panel>
+            <!-- Button -->
+            <Panel Margin="0,0,0,50">
+              <Rectangle Background="Black" Width="70%" Height="50" Alignment="Center" Margin="20,0,0,0">
+                <Stroke Width="1" Color="White" />
+                <Paragraph FontSize="16" Alignment="Center" Value="BOKA FÖRELÄSNING" />
+              </Rectangle>
+            </Panel>
           </With>
         </StackPanel>
       </ScrollView>

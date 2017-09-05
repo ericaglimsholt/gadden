@@ -11,7 +11,7 @@ namespace g{struct gadden_FuseControlsNavigationControl_Active_Property;}
 
 namespace g{
 
-// internal sealed class gadden_FuseControlsNavigationControl_Active_Property :67
+// internal sealed class gadden_FuseControlsNavigationControl_Active_Property :58
 // {
 ::g::Uno::UX::Property1_type* gadden_FuseControlsNavigationControl_Active_Property_typeof();
 void gadden_FuseControlsNavigationControl_Active_Property__ctor_3_fn(gadden_FuseControlsNavigationControl_Active_Property* __this, ::g::Fuse::Controls::NavigationControl* obj, ::g::Uno::UX::Selector* name);

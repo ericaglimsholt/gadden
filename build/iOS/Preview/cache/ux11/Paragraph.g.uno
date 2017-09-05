@@ -14,6 +14,7 @@ public partial class Paragraph: Fuse.Controls.TextView
         this.TextWrapping = Fuse.Controls.TextWrapping.Wrap;
         this.FontSize = 14f;
         this.TextColor = float4(1f, 1f, 1f, 1f);
+        this.IsReadOnly = true;
         this.Font = global::MainView.Raleway;
     }
 }

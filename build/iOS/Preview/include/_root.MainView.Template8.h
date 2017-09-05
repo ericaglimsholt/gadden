@@ -11,7 +11,7 @@ namespace g{struct MainView__Template8;}
 
 namespace g{
 
-// public partial sealed class MainView.Template8 :510
+// public partial sealed class MainView.Template8 :534
 // {
 ::g::Uno::UX::Template_type* MainView__Template8_typeof();
 void MainView__Template8__ctor_1_fn(MainView__Template8* __this, ::g::MainView* parent, ::g::MainView* parentInstance);
@@ -27,7 +27,7 @@ struct MainView__Template8 : ::g::Uno::UX::Template
     uWeak< ::g::MainView*> __parentInstance1;
     static ::g::Uno::UX::Selector __selector0_;
     static ::g::Uno::UX::Selector& __selector0() { return MainView__Template8_typeof()->Init(), __selector0_; }
-    uStrong< ::g::Uno::UX::Property1*> temp_Value_inst;
+    uStrong< ::g::Uno::UX::Property1*> temp_Url_inst;
 
     void ctor_1(::g::MainView* parent, ::g::MainView* parentInstance);
     static MainView__Template8* New2(::g::MainView* parent, ::g::MainView* parentInstance);

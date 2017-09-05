@@ -1,17 +1,22 @@
 var Observable = require("FuseJS/Observable");
 var data = Observable();
+var selectedArticle = Observable();
+var selectedLecture = Observable();
 
 function Article(item) {
     this.title = item.title;
     this.image = item.image.url;
     this.text = item.text;
 };
-
-var selectedArticle = Observable();
-
+// Collects data from cliked article
 function articleClicked(args) {
 	console.log(JSON.stringify(args.data));
 	selectedArticle.value = args.data;
+};
+// Collects data from clicked lecture
+function goToEvent(args) {
+	console.log(JSON.stringify(args.data));
+	selectedProgram.value = args.data;
 };
 
 fetch("https://dev.jexpo.se/dev/forms/ws:news?getAttributes=1")
@@ -30,5 +35,7 @@ fetch("https://dev.jexpo.se/dev/forms/ws:news?getAttributes=1")
 module.exports = {
     dataSource: data,
     articleClicked: articleClicked,
-    selectedArticle: selectedArticle
+    selectedArticle: selectedArticle,
+    goToEvent: goToEvent,
+    selectedLecture: selectedLecture
 };

@@ -54,7 +54,7 @@ namespace g{
 // static Template() :23
 static void MainView__Template__cctor__fn(uType* __type)
 {
-    MainView__Template::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 1, ::STRINGS[0/*"temp_eb8"*/]);
+    MainView__Template::__g_static_nametable1_ = uArray::Init<uString*>(::TYPES[0/*string[]*/], 1, ::STRINGS[0/*"temp_eb9"*/]);
     MainView__Template::__selector0_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[1/*"Visibility"*/]);
     MainView__Template::__selector1_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[2/*"Value"*/]);
     MainView__Template::__selector2_ = ::g::Uno::UX::Selector__op_Implicit(::STRINGS[3/*"Url"*/]);
@@ -62,7 +62,7 @@ static void MainView__Template__cctor__fn(uType* __type)
 
 static void MainView__Template_build(uType* type)
 {
-    ::STRINGS[0] = uString::Const("temp_eb8");
+    ::STRINGS[0] = uString::Const("temp_eb9");
     ::STRINGS[1] = uString::Const("Visibility");
     ::STRINGS[2] = uString::Const("Value");
     ::STRINGS[3] = uString::Const("Url");
@@ -134,7 +134,7 @@ void MainView__Template__New1_fn(MainView__Template* __this, uObject** __retval)
     ::g::Fuse::Triggers::Actions::Set* temp6 = (::g::Fuse::Triggers::Actions::Set*)::g::Fuse::Triggers::Actions::Set::New2(::TYPES[1/*Fuse.Triggers.Actions.Set<Fuse.Elements.Visibility>*/], __this->NewsDetails_Visibility_inst);
     ::g::Fuse::Triggers::Actions::Set* temp7 = (::g::Fuse::Triggers::Actions::Set*)::g::Fuse::Triggers::Actions::Set::New2(::TYPES[1/*Fuse.Triggers.Actions.Set<Fuse.Elements.Visibility>*/], __this->NewsFeed_Visibility_inst);
     ::g::Fuse::Triggers::Actions::Callback* temp8 = ::g::Fuse::Triggers::Actions::Callback::New2();
-    ::g::Fuse::Reactive::EventBinding* temp_eb81 = ::g::Fuse::Reactive::EventBinding::New1((uObject*)temp1, __this->__g_nametable1);
+    ::g::Fuse::Reactive::EventBinding* temp_eb91 = ::g::Fuse::Reactive::EventBinding::New1((uObject*)temp1, __this->__g_nametable1);
     ::g::Fuse::Controls::Panel* temp9 = ::g::Fuse::Controls::Panel::New3();
     ::g::Fuse::Reactive::DataBinding* temp10 = ::g::Fuse::Reactive::DataBinding::New1(__this->temp_Value_inst, (uObject*)temp3, __this->__g_nametable1, 3);
     ::g::Fuse::Reactive::DataBinding* temp11 = ::g::Fuse::Reactive::DataBinding::New1(__this->__self_Url_inst1, (uObject*)temp4, __this->__g_nametable1, 3);
@@ -144,12 +144,12 @@ void MainView__Template__New1_fn(MainView__Template* __this, uObject** __retval)
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp5->Actions()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp6);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp5->Actions()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp7);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp5->Actions()), ::TYPES[2/*Uno.Collections.ICollection<Fuse.Triggers.Actions.TriggerAction>*/]), temp8);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp5->Bindings()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp_eb81);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp5->Bindings()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp_eb91);
     ::g::Fuse::Triggers::Actions::Set__set_Value_fn(temp6, uCRef<int>(0));
     temp6->Delay(0.2f);
     ::g::Fuse::Triggers::Actions::Set__set_Value_fn(temp7, uCRef<int>(2));
     temp7->Delay(0.2f);
-    temp8->add_Handler(uDelegate::New(::TYPES[4/*Fuse.VisualEventHandler*/], (void*)::g::Fuse::Reactive::EventBinding__OnEvent_fn, temp_eb81));
+    temp8->add_Handler(uDelegate::New(::TYPES[4/*Fuse.VisualEventHandler*/], (void*)::g::Fuse::Reactive::EventBinding__OnEvent_fn, temp_eb91));
     temp9->Alignment(13);
     temp9->Margin(::g::Uno::Float4__New2(20.0f, 20.0f, 20.0f, 20.0f));
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp9->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp);
@@ -159,7 +159,7 @@ void MainView__Template__New1_fn(MainView__Template* __this, uObject** __retval)
     temp->TextColor(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
     temp->Font(::g::MainView::TitleFont());
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(temp->Bindings()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp10);
-    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__this->__g_nametable1)->Objects()), ::TYPES[6/*Uno.Collections.ICollection<object>*/]), temp_eb81);
+    ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(uPtr(__this->__g_nametable1)->Objects()), ::TYPES[6/*Uno.Collections.ICollection<object>*/]), temp_eb91);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp5);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Children()), ::TYPES[5/*Uno.Collections.ICollection<Fuse.Node>*/]), temp9);
     ::g::Uno::Collections::ICollection::Add_ex(uInterface(uPtr(__self1->Bindings()), ::TYPES[3/*Uno.Collections.ICollection<Fuse.Binding>*/]), temp11);

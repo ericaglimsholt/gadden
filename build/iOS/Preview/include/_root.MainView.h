@@ -57,6 +57,8 @@ struct MainView : ::g::Fuse::App
     static ::g::Uno::UX::Selector& __selector104() { return MainView_typeof()->Init(), __selector104_; }
     static ::g::Uno::UX::Selector __selector105_;
     static ::g::Uno::UX::Selector& __selector105() { return MainView_typeof()->Init(), __selector105_; }
+    static ::g::Uno::UX::Selector __selector106_;
+    static ::g::Uno::UX::Selector& __selector106() { return MainView_typeof()->Init(), __selector106_; }
     static ::g::Uno::UX::Selector __selector11_;
     static ::g::Uno::UX::Selector& __selector11() { return MainView_typeof()->Init(), __selector11_; }
     static ::g::Uno::UX::Selector __selector12_;
@@ -339,6 +341,7 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Controls::Image*> infoIconMap2;
     uStrong< ::g::Uno::UX::Property1*> infoIconMap2_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Page*> login;
+    uStrong< ::g::Fuse::Controls::Panel*> LoginPage;
     uStrong< ::g::Fuse::Controls::Image*> logoImage;
     uStrong< ::g::Fuse::Controls::Page*> map;
     uStrong< ::g::Fuse::Triggers::WhileTrue*> MapToggle;
@@ -356,7 +359,7 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> NewsDetails_Visibility_inst;
     uStrong< ::g::Fuse::Controls::Panel*> NewsFeed;
     uStrong< ::g::Uno::UX::Property1*> NewsFeed_Visibility_inst;
-    uStrong< ::g::Fuse::Triggers::WhileTrue*> opacityProgram;
+    uStrong< ::g::Fuse::Controls::Panel*> NotInlogged;
     uStrong< ::g::Fuse::Triggers::WhileTrue*> opacityToggle;
     uStrong< ::g::Fuse::Controls::Page*> partners;
     uStrong< ::g::Fuse::Controls::Text*> PartnerTitle;
@@ -374,9 +377,7 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Uno::UX::Property1*> popupInfoMap2_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Page*> program;
     uStrong< ::g::Fuse::Controls::Panel*> ProgramDetails;
-    uStrong< ::g::Uno::UX::Property1*> ProgramDetails_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Panel*> ProgramFeed;
-    uStrong< ::g::Uno::UX::Property1*> ProgramFeed_Opacity_inst;
     uStrong< ::g::Fuse::Controls::Page*> project;
     uStrong< ::g::Fuse::Controls::Panel*> ProjectTab;
     static uSStrong< ::g::Fuse::Font*> Raleway_;
@@ -405,6 +406,7 @@ struct MainView : ::g::Fuse::App
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb5;
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb6;
     uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb7;
+    uStrong< ::g::Fuse::Reactive::EventBinding*> temp_eb8;
     uStrong< ::g::Uno::UX::Property1*> temp_Items_inst;
     uStrong< ::g::Uno::UX::Property1*> temp1_Url_inst;
     uStrong< ::g::Uno::UX::Property1*> temp10_Value_inst;

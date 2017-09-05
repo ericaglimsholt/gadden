@@ -1,40 +1,35 @@
 <Page Background="Black">
   <JavaScript File="Login.js" />
+  <Panel ux:Name="LoginPage" Visibility="Visible" >
+  <Image Alignment="TopCenter" Layer="Background" File="../../assets/BackgroundIceBreaker.png"  />
 
-    <Image Alignment="TopCenter" Layer="Background" File="../../assets/BackgroundIceBreaker.png"  />
+  <StackPanel Margin="60,120,60,60">
+    <TextInput Row="0" Column="1" PlaceholderText="E-POST" PlaceholderColor="White" TextColor="White" CaretColor="#fff" TextAlignment="Center" Padding="0,0,0,10" Font="Raleway"/>
+    <Rectangle Row="0" Column="0" Alignment="Bottom" ColumnSpan="2" Height="1" Color="#fff"/>
 
-    <StackPanel Margin="60,120,60,60">
-      <TextInput Row="0" Column="1" PlaceholderText="E-POST" PlaceholderColor="White" TextColor="White" CaretColor="#fff" TextAlignment="Center" Padding="0,0,0,10" Font="Raleway"/>
-      <Rectangle Row="0" Column="0" Alignment="Bottom" ColumnSpan="2" Height="1" Color="#fff"/>
+    <TextInput Row="0" Column="1" PlaceholderText="NAMN" PlaceholderColor="White" TextColor="White" CaretColor="#fff" TextAlignment="Center" Padding="0,0,0,10" Font="Raleway" Margin="0,40,0,0"/>
+    <Rectangle Row="0" Column="0" Alignment="Bottom" ColumnSpan="2" Height="1" Color="#fff"/>
 
-      <TextInput Row="0" Column="1" PlaceholderText="NAMN" PlaceholderColor="White" TextColor="White" CaretColor="#fff" TextAlignment="Center" Padding="0,0,0,10" Font="Raleway" Margin="0,40,0,0"/>
-      <Rectangle Row="0" Column="0" Alignment="Bottom" ColumnSpan="2" Height="1" Color="#fff"/>
+    <Rectangle Background="White" Width="200" Height="50" Margin="0,60,0,15">
+      <Text Value="LOGGA IN" Color="Black" Alignment="Center" Font="RalewayBlack"/>
+     </Rectangle>
 
-      <Rectangle Background="White" Width="200" Height="50" Margin="0,60,0,15">
-        <Text Value="LOGGA IN" Color="Black" Alignment="Center" Font="RalewayBlack"/>
-       </Rectangle>
+     <Text Value="Har du glömt ditt lösenord?" Font="Raleway" FontSize="12" Color="White" Alignment="Center" >
+       <Clicked>
+         <LaunchUri Uri="http://www.gadden.com/mina-sidor-student" />
+       </Clicked>
+     </Text>
+   </StackPanel>
 
-       <Text Value="Har du glömt ditt lösenord?" Font="Raleway" FontSize="12" Color="White" Alignment="Center" >
-         <Clicked>
-           <LaunchUri Uri="http://www.gadden.com/mina-sidor-student" />
-         </Clicked>
-       </Text>
-     </StackPanel>
-
-     <StackPanel Alignment="Bottom">
-       <Text Value="Har du inget konto?" Font="Raleway" FontSize="12" Color="White" Alignment="Center" />
-       <Rectangle Background="Black" Width="200" Height="50" Margin="0,15,0,30">
-         <Stroke Width="1" Color="White" />
-         <Text Value="SKAPA ETT KONTO" Color="White" Alignment="Center" Font="RalewayBlack"/>
-         <Clicked>
-           <LaunchUri Uri="http://www.gadden.com/mina-sidor-student" />
-         </Clicked>
-       </Rectangle>
-     </StackPanel>
-
-      <!-- <Panel ux:Class="LoginButton" HitTestMode="LocalBounds" Margin="4" Color="#fff">
-          <string ux:Property="Text" />
-          <LoginButton Color="Black" Alignment="Center" Margin="30,15" Text="LOGGA IN / REGISTRERA" />
-      </Panel> -->
-
+   <StackPanel Alignment="Bottom">
+     <Text Value="Har du inget konto?" Font="Raleway" FontSize="12" Color="White" Alignment="Center" />
+     <Rectangle Background="Black" Width="200" Height="50" Margin="0,15,0,30">
+       <Stroke Width="1" Color="White" />
+       <Text Value="SKAPA ETT KONTO" Color="White" Alignment="Center" Font="RalewayBlack"/>
+       <Clicked>
+         <LaunchUri Uri="http://www.gadden.com/mina-sidor-student" />
+       </Clicked>
+     </Rectangle>
+   </StackPanel>
+ </Panel>
 </Page>

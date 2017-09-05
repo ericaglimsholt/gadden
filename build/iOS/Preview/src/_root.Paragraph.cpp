@@ -6,6 +6,7 @@
 #include <Fuse.Controls.TextInputControl.h>
 #include <Fuse.Controls.TextWrapping.h>
 #include <Fuse.Font.h>
+#include <Uno.Bool.h>
 #include <Uno.Float.h>
 #include <Uno.Float4.h>
 
@@ -130,6 +131,7 @@ void Paragraph::InitializeUX()
     TextWrapping(1);
     FontSize(14.0f);
     TextColor(::g::Uno::Float4__New2(1.0f, 1.0f, 1.0f, 1.0f));
+    IsReadOnly(true);
     Font(::g::MainView::Raleway());
 }
 

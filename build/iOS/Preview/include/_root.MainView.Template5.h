@@ -29,6 +29,10 @@ struct MainView__Template5 : ::g::Uno::UX::Template
     static ::g::Uno::UX::Selector& __selector0() { return MainView__Template5_typeof()->Init(), __selector0_; }
     static ::g::Uno::UX::Selector __selector1_;
     static ::g::Uno::UX::Selector& __selector1() { return MainView__Template5_typeof()->Init(), __selector1_; }
+    static ::g::Uno::UX::Selector __selector2_;
+    static ::g::Uno::UX::Selector& __selector2() { return MainView__Template5_typeof()->Init(), __selector2_; }
+    uStrong< ::g::Uno::UX::Property1*> ProgramDetails_Visibility_inst;
+    uStrong< ::g::Uno::UX::Property1*> ProgramFeed_Visibility_inst;
     uStrong< ::g::Uno::UX::Property1*> temp_Url_inst;
     uStrong< ::g::Uno::UX::Property1*> temp1_Value_inst;
     uStrong< ::g::Uno::UX::Property1*> temp2_Value_inst;

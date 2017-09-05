@@ -37,9 +37,15 @@
       <ScrollView>
         <StackPanel>
           <With Data="{selectedProgram}">
+          <Panel Width="100%">
+            <Image Alignment="TopRight" Width="25" Height="25" Margin="20" File="../../assets/CrossIcon.png">
+              <Clicked>
+                <Set ProgramDetails.Visibility="Hidden" Delay="0.2" />
+                <Set ProgramFeed.Visibility="Visible" Delay="0.2" />
+              </Clicked>
+            </Image>
             <!-- Get image from JSON -->
-            <Panel Width="100%" Height="100%">
-              <Image Url="{image}" Height="100%" />
+              <Image Url="{image}" Width="100%" Height="100%" />
             </Panel>
             <!-- Get name from JSON -->
             <Panel Alignment="BottomLeft" Margin="0,20,0,0" Width="100%" Height="100%">
@@ -65,10 +71,10 @@
                 <Paragraph FontSize="16" Alignment="Center" Value="BOKA FÖRELÄSNING" />
               </Rectangle>
             </Panel>
-
           </With>
         </StackPanel>
       </ScrollView>
     </Rectangle>
   </Panel>
+
 </Page>

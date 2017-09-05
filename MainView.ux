@@ -34,28 +34,28 @@
 				<Change sidebarFade.Opacity="1" />
 			</ActivatingAnimation>
 
-			<!-- <Panel ux:Name="NotInlogged" Opacity="0">
+			<Panel ux:Name="NotInlogged" Visibility="Visible">
 				<StackPanel Margin="20">
 					<Rectangle Margin="0,80,0,0" Background="Black" Width="70%" Height="50" Alignment="TopCenter" >
 						<Stroke Width="1" Color="White" />
 						<Paragraph FontSize="18" Alignment="Center" Value="LOGGA IN" />
 						<Clicked><Set navigation.Active="login" /> <Callback Handler="{closeTest}"/></Clicked>
-					</Rectangle> -->
+					</Rectangle>
 					<!-- Line seperator -->
-					<!-- <Rectangle Alignment="Center" Margin="0,40,0,0" Fill="White" Height="1px" SnapToPixels="true" Width="100%"/> -->
+					<Rectangle Alignment="Center" Margin="0,40,0,0" Fill="White" Height="1px" SnapToPixels="true" Width="100%"/>
 					<!-- Title -->
-					<!-- <Title Alignment="Center" Margin="0,20,0,20" Value="STJÄRNMARKERADE UTSTÄLLARE" /> -->
+					<Title Alignment="Center" Margin="0,20,0,20" Value="STJÄRNMARKERADE UTSTÄLLARE" />
 					<!-- Content below creates lectures -->
-					<!-- <Image Alignment="BottomRight" Width="10" Margin="0,0,0,-10" File="assets/CrossIcon.png" />
+					<Image Alignment="BottomRight" Width="10" Margin="0,0,0,-10" File="assets/CrossIcon.png" />
 					<Grid Row="1" Columns="2* ,3* ,1*">
 						<Image Height="80" Width="100%" Alignment="BottomLeft" StretchMode="UniformToFill" File="assets/NewsExampleImage.png"/>
 						<SmallText Value="HANDELSBANKEN ONSDAG 8/11" FontSize="12" Alignment="BottomLeft" Margin="10,0,0,-5" />
 						<Image File="assets/ArrowRightWhite.png" Width="10" Alignment="Right" />
-					</Grid> -->
+					</Grid>
 					<!-- Seperator -->
-					<!-- <Rectangle Margin="0,20,0,20" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
+					<Rectangle Margin="0,20,0,20" Fill="#979797" Height="1px" SnapToPixels="true" Width="100%"/>
 				</StackPanel>
-		</Panel> -->
+		</Panel>
 
 		<!-- <Panel ux:Name="CrewInlogged" Opacity="1">
 			<ScrollView>

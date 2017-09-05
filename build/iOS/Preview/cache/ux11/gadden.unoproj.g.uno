@@ -55,6 +55,14 @@ sealed class gadden_FuseElementsElement_Opacity_Property: Uno.UX.Property<float>
     public override void Set(global::Uno.UX.PropertyObject obj, float v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Elements.Element)obj).SetOpacity(v, origin); }
     public override bool SupportsOriginSetter { get { return true; } }
 }
+sealed class gadden_FuseControlsNavigationControl_Active_Property: Uno.UX.Property<Fuse.Visual>
+{
+    [Uno.WeakReference] readonly Fuse.Controls.NavigationControl _obj;
+    public gadden_FuseControlsNavigationControl_Active_Property(Fuse.Controls.NavigationControl obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
+    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
+    public override Fuse.Visual Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Controls.NavigationControl)obj).Active; }
+    public override void Set(global::Uno.UX.PropertyObject obj, Fuse.Visual v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.NavigationControl)obj).Active = v; }
+}
 sealed class gadden_FuseControlsTextControl_Value_Property: Uno.UX.Property<string>
 {
     [Uno.WeakReference] readonly Fuse.Controls.TextControl _obj;
@@ -63,14 +71,6 @@ sealed class gadden_FuseControlsTextControl_Value_Property: Uno.UX.Property<stri
     public override string Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Controls.TextControl)obj).Value; }
     public override void Set(global::Uno.UX.PropertyObject obj, string v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.TextControl)obj).SetValue(v, origin); }
     public override bool SupportsOriginSetter { get { return true; } }
-}
-sealed class gadden_FuseControlsNavigationControl_Active_Property: Uno.UX.Property<Fuse.Visual>
-{
-    [Uno.WeakReference] readonly Fuse.Controls.NavigationControl _obj;
-    public gadden_FuseControlsNavigationControl_Active_Property(Fuse.Controls.NavigationControl obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
-    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
-    public override Fuse.Visual Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Controls.NavigationControl)obj).Active; }
-    public override void Set(global::Uno.UX.PropertyObject obj, Fuse.Visual v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.NavigationControl)obj).Active = v; }
 }
 sealed class gadden_FuseElementsElement_Visibility_Property: Uno.UX.Property<Fuse.Elements.Visibility>
 {

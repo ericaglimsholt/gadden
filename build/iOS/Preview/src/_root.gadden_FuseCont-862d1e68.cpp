@@ -10,7 +10,7 @@ static uType* TYPES[1];
 
 namespace g{
 
-// internal sealed class gadden_FuseControlsNavigationControl_Active_Property :67
+// internal sealed class gadden_FuseControlsNavigationControl_Active_Property :58
 // {
 static void gadden_FuseControlsNavigationControl_Active_Property_build(uType* type)
 {
@@ -38,46 +38,46 @@ static void gadden_FuseControlsNavigationControl_Active_Property_build(uType* ty
     return type;
 }
 
-// public gadden_FuseControlsNavigationControl_Active_Property(Fuse.Controls.NavigationControl obj, Uno.UX.Selector name) :70
+// public gadden_FuseControlsNavigationControl_Active_Property(Fuse.Controls.NavigationControl obj, Uno.UX.Selector name) :61
 void gadden_FuseControlsNavigationControl_Active_Property__ctor_3_fn(gadden_FuseControlsNavigationControl_Active_Property* __this, ::g::Fuse::Controls::NavigationControl* obj, ::g::Uno::UX::Selector* name)
 {
     __this->ctor_3(obj, *name);
 }
 
-// public override sealed Fuse.Visual Get(Uno.UX.PropertyObject obj) :72
+// public override sealed Fuse.Visual Get(Uno.UX.PropertyObject obj) :63
 void gadden_FuseControlsNavigationControl_Active_Property__Get1_fn(gadden_FuseControlsNavigationControl_Active_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Fuse::Visual** __retval)
 {
     uStackFrame __("gadden_FuseControlsNavigationControl_Active_Property", "Get(Uno.UX.PropertyObject)");
     return *__retval = uPtr(uCast< ::g::Fuse::Controls::NavigationControl*>(obj, ::TYPES[0/*Fuse.Controls.NavigationControl*/]))->Active(), void();
 }
 
-// public gadden_FuseControlsNavigationControl_Active_Property New(Fuse.Controls.NavigationControl obj, Uno.UX.Selector name) :70
+// public gadden_FuseControlsNavigationControl_Active_Property New(Fuse.Controls.NavigationControl obj, Uno.UX.Selector name) :61
 void gadden_FuseControlsNavigationControl_Active_Property__New1_fn(::g::Fuse::Controls::NavigationControl* obj, ::g::Uno::UX::Selector* name, gadden_FuseControlsNavigationControl_Active_Property** __retval)
 {
     *__retval = gadden_FuseControlsNavigationControl_Active_Property::New1(obj, *name);
 }
 
-// public override sealed Uno.UX.PropertyObject get_Object() :71
+// public override sealed Uno.UX.PropertyObject get_Object() :62
 void gadden_FuseControlsNavigationControl_Active_Property__get_Object_fn(gadden_FuseControlsNavigationControl_Active_Property* __this, ::g::Uno::UX::PropertyObject** __retval)
 {
     return *__retval = __this->_obj, void();
 }
 
-// public override sealed void Set(Uno.UX.PropertyObject obj, Fuse.Visual v, Uno.UX.IPropertyListener origin) :73
+// public override sealed void Set(Uno.UX.PropertyObject obj, Fuse.Visual v, Uno.UX.IPropertyListener origin) :64
 void gadden_FuseControlsNavigationControl_Active_Property__Set1_fn(gadden_FuseControlsNavigationControl_Active_Property* __this, ::g::Uno::UX::PropertyObject* obj, ::g::Fuse::Visual* v, uObject* origin)
 {
     uStackFrame __("gadden_FuseControlsNavigationControl_Active_Property", "Set(Uno.UX.PropertyObject,Fuse.Visual,Uno.UX.IPropertyListener)");
     uPtr(uCast< ::g::Fuse::Controls::NavigationControl*>(obj, ::TYPES[0/*Fuse.Controls.NavigationControl*/]))->Active(v);
 }
 
-// public gadden_FuseControlsNavigationControl_Active_Property(Fuse.Controls.NavigationControl obj, Uno.UX.Selector name) [instance] :70
+// public gadden_FuseControlsNavigationControl_Active_Property(Fuse.Controls.NavigationControl obj, Uno.UX.Selector name) [instance] :61
 void gadden_FuseControlsNavigationControl_Active_Property::ctor_3(::g::Fuse::Controls::NavigationControl* obj, ::g::Uno::UX::Selector name)
 {
     ctor_2(name);
     _obj = obj;
 }
 
-// public gadden_FuseControlsNavigationControl_Active_Property New(Fuse.Controls.NavigationControl obj, Uno.UX.Selector name) [static] :70
+// public gadden_FuseControlsNavigationControl_Active_Property New(Fuse.Controls.NavigationControl obj, Uno.UX.Selector name) [static] :61
 gadden_FuseControlsNavigationControl_Active_Property* gadden_FuseControlsNavigationControl_Active_Property::New1(::g::Fuse::Controls::NavigationControl* obj, ::g::Uno::UX::Selector name)
 {
     gadden_FuseControlsNavigationControl_Active_Property* obj1 = (gadden_FuseControlsNavigationControl_Active_Property*)uNew(gadden_FuseControlsNavigationControl_Active_Property_typeof());
